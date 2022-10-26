@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: io.github.anvilloystudio.minimods.mod.core.ores.Main
+Implementation-Title: mod-core-ores
+Implementation-Version: 0.1.0
+
