@@ -1,7 +1,5 @@
 package io.github.anvilloystudio.minimods.mod.core.ores.tiles;
 
-import java.io.IOException;
-
 import io.github.anvilloystudio.minimods.api.GraphicComp;
 import io.github.anvilloystudio.minimods.api.ModTileGen;
 import io.github.anvilloystudio.minimods.api.OreTypeMixinEnumUtil;
@@ -9,8 +7,10 @@ import io.github.anvilloystudio.minimods.api.mixins.OreTileMixin;
 import io.github.anvilloystudio.minimods.api.mixins.TilesMixin;
 import minicraft.item.Items;
 import minicraft.level.tile.OreTile;
-import minicraft.level.tile.Tiles;
 import minicraft.level.tile.OreTile.OreType;
+import minicraft.level.tile.Tiles;
+
+import java.io.IOException;
 
 public class OreTiles {
 	public static void init() {
