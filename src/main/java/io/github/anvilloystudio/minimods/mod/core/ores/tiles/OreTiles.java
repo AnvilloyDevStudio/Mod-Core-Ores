@@ -58,13 +58,13 @@ public class OreTiles {
 
 	private static void silverGenerationUnderground2(byte[] map, byte[] data, int layer, int w, int h, Random random) {
 		int r = 2;
-		for (int i = 0; i < w * h / 50; i++) {
-			int x = random.nextInt(w);
+		for (int i = 0; i < w * h / 50; i++) { // How many times attempting to generate.
+			int x = random.nextInt(w); // Random select a location.
 			int y = random.nextInt(h);
-			for (int j = 0; j < 10; j++) {
-				int xx = x + random.nextInt(3) - random.nextInt(3);
+			for (int j = 0; j < 10; j++) { // How large for each ore vein.
+				int xx = x + random.nextInt(3) - random.nextInt(3); // Random select a tile for the vein.
 				int yy = y + random.nextInt(3) - random.nextInt(3);
-				if (xx >= r && yy >= r && xx < w - r && yy < h - r) {
+				if (xx >= r && yy >= r && xx < w - r && yy < h - r) { // If the location of the tile is valid.
 					if (map[xx + yy * w] == Tiles.get("rock").id) {
 						map[xx + yy * w] = (byte) ((Tiles.get("Silver Ore").id & 0xff));
 					}
@@ -75,13 +75,13 @@ public class OreTiles {
 
 	private static void leadGenerationUnderground3(byte[] map, byte[] data, int layer, int w, int h, Random random) {
 		int r = 2;
-		for (int i = 0; i < w * h / 100; i++) {
-			int x = random.nextInt(w);
+		for (int i = 0; i < w * h / 100; i++) { // How many times attempting to generate.
+			int x = random.nextInt(w); // Random select a location.
 			int y = random.nextInt(h);
-			for (int j = 0; j < 10; j++) {
-				int xx = x + random.nextInt(3) - random.nextInt(3);
+			for (int j = 0; j < 10; j++) { // How large for each ore vein.
+				int xx = x + random.nextInt(3) - random.nextInt(3); // Random select a tile for the vein.
 				int yy = y + random.nextInt(3) - random.nextInt(3);
-				if (xx >= r && yy >= r && xx < w - r && yy < h - r) {
+				if (xx >= r && yy >= r && xx < w - r && yy < h - r) { // If the location of the tile is valid.
 					if (map[xx + yy * w] == Tiles.get("rock").id) {
 						map[xx + yy * w] = (byte) ((Tiles.get("Lead Ore").id & 0xff));
 					}
@@ -92,13 +92,13 @@ public class OreTiles {
 
 	private static void tinGenerationUnderground2(byte[] map, byte[] data, int layer, int w, int h, Random random) {
 		int r = 2;
-		for (int i = 0; i < w * h / 100; i++) {
-			int x = random.nextInt(w);
+		for (int i = 0; i < w * h / 100; i++) { // How many times attempting to generate.
+			int x = random.nextInt(w); // Random select a location.
 			int y = random.nextInt(h);
-			for (int j = 0; j < 10; j++) {
-				int xx = x + random.nextInt(3) - random.nextInt(3);
+			for (int j = 0; j < 10; j++) { // How large for each ore vein.
+				int xx = x + random.nextInt(3) - random.nextInt(3); // Random select a tile for the vein.
 				int yy = y + random.nextInt(3) - random.nextInt(3);
-				if (xx >= r && yy >= r && xx < w - r && yy < h - r) {
+				if (xx >= r && yy >= r && xx < w - r && yy < h - r) { // If the location of the tile is valid.
 					if (map[xx + yy * w] == Tiles.get("rock").id) {
 						map[xx + yy * w] = (byte) ((Tiles.get("Tin Ore").id & 0xff));
 					}
@@ -109,7 +109,7 @@ public class OreTiles {
 
 	private static void copperGenerationUnderground1(byte[] map, byte[] data, int layer, int w, int h, Random random) {
 		int r = 2;
-		for (int i = 0; i < w * h / 300; i++) { // How many times attemping to generate.
+		for (int i = 0; i < w * h / 300; i++) { // How many times attempting to generate.
 			int x = random.nextInt(w); // Random select a location.
 			int y = random.nextInt(h);
 			for (int j = 0; j < 40; j++) { // How large for each ore vein.
