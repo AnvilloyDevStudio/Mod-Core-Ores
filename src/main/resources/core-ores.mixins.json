@@ -2,6 +2,7 @@
   "required": true,
   "package": "io.github.anvilloystudio.minimods.mod.core.ores.mixins",
   "priority": 2147480099,
+  "minVersion": "0.8.5",
   "mixins": [
     "RecipesMixin",
     "StackableItemMixin",
